@@ -176,7 +176,11 @@
 		padding: 0 20px;
 	}
 	/* ========== HEADER START =========  */
+
 	/* ========== HEADER END =========   */
+
+	/* ========== HOME START =========   */
+
 	/* ========== HOME  END  =========    */
 
 	/* ========== PARTNERS START ========= */
@@ -211,6 +215,7 @@
 
 	/* ========== FOOTER END =========  */
 }
+
 /* ============== EXTRA LARGE  SCREENS   @media   END  =================*/
 
 /* ============== DESKTOPS  LARGE  SCREENS  @media START ================ */
@@ -219,7 +224,11 @@
 		padding: 0 20px;
 	}
 	/* ========== HEADER START =========  */
+
 	/* ========== HEADER END =========   */
+
+	/* ========== HOME START =========   */
+
 	/* ========== HOME  END  =========    */
 
 	/* ========== PARTNERS START ========= */
@@ -254,9 +263,11 @@
 
 	/* ========== FOOTER END =========  */
 }
+
 /* ============== DESKTOPS  LARGE  SCREENS  @media END ================ */
 
 /* ============== SMALL SCREENS LAPTOPS   @media START ================ */
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 	.container {
 		padding: 0 20px;
@@ -285,6 +296,7 @@
 		display: none;
 	}
 	/* ========== HEADER END =========   */
+	/* ========== HOME START =========   */
 
 	/* ========== HOME  END  =========    */
 
@@ -323,6 +335,7 @@
 /* ============== SMALL SCREENS LAPTOPS   @media END ================*/
 
 /*  ==============iPADS , TABLETS   @media START ================ */
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
 	.container {
 		padding: 0 20px;
@@ -353,6 +366,8 @@
 		display: none;
 	}
 	/* ========== HEADER END =========   */
+
+	/* ========== HOME START =========   */
 
 	/* ========== HOME  END  =========    */
 
@@ -391,6 +406,7 @@
 /* ============== iPADS , TABLETS   @media  END ================*/
 
 /* ============== MOBILE  DEVICES   @media START ================*/
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
 	.container {
 		padding: 0 20px;
@@ -431,6 +447,8 @@
 		display: none;
 	}
 	/* ========== HEADER END =========   */
+
+	/* ========== HOME START =========   */
 
 	/* ========== HOME  END  =========    */
 
