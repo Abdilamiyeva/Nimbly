@@ -170,99 +170,98 @@
 
 /* ========== FOOTER END =========  */
 
-
 /* =============== EXTRA LARGE  SCREENS   @media   START ================ */
-@media screen and (min-width:1201px) {
-    .container{
-        padding: 0 20px;
-    }   
-     /* ========== HEADER START =========  */
+@media screen and (min-width: 1201px) {
+	.container {
+		padding: 0 20px;
+	}
+	/* ========== HEADER START =========  */
 
- /* ========== HEADER END =========   */
+	/* ========== HEADER END =========   */
 
- /* ========== HOME START =========   */
+	/* ========== HOME START =========   */
 
- /* ========== HOME  END  =========    */
+	/* ========== HOME  END  =========    */
 
- /* ========== PARTNERS START ========= */
+	/* ========== PARTNERS START ========= */
 
- /* ========== PARTNERS  END =========  */
+	/* ========== PARTNERS  END =========  */
 
- /* ========== HELPS  START=========   */
+	/* ========== HELPS  START=========   */
 
- /* ========== HELPS  END =========  */
+	/* ========== HELPS  END =========  */
 
-/* ==========  OUR  FEATURES START =========  */
+	/* ==========  OUR  FEATURES START =========  */
 
-/* ==========  OUR  FEATURES END =========  */
+	/* ==========  OUR  FEATURES END =========  */
 
-/* ==========  WORKS  START ========= */
+	/* ==========  WORKS  START ========= */
 
-/* ==========  WORKS END ========= */
+	/* ==========  WORKS END ========= */
 
-/* ========== INDUSTRIES START =========  */
+	/* ========== INDUSTRIES START =========  */
 
-/* ========== INDUSTRIES END ========= */
+	/* ========== INDUSTRIES END ========= */
 
-/* ========== CUSTOMER START ========= */
+	/* ========== CUSTOMER START ========= */
 
-/* ========== CUSTOMER END =========  */
+	/* ========== CUSTOMER END =========  */
 
-/* ========== CONTACT  START =========  */
+	/* ========== CONTACT  START =========  */
 
-/* ========== CONTACT  END =========  */
+	/* ========== CONTACT  END =========  */
 
-/* ========== FOOTER START =========  */
+	/* ========== FOOTER START =========  */
 
-/* ========== FOOTER END =========  */
+	/* ========== FOOTER END =========  */
 }
 
 /* ============== EXTRA LARGE  SCREENS   @media   END  =================*/
 
 /* ============== DESKTOPS  LARGE  SCREENS  @media START ================ */
-@media screen and (min-width:1025px) and (max-width:1200px) {
-    .container{
-        padding: 0 20px;
-    }  
-     /* ========== HEADER START =========  */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+	.container {
+		padding: 0 20px;
+	}
+	/* ========== HEADER START =========  */
 
- /* ========== HEADER END =========   */
+	/* ========== HEADER END =========   */
 
- /* ========== HOME START =========   */
+	/* ========== HOME START =========   */
 
- /* ========== HOME  END  =========    */
+	/* ========== HOME  END  =========    */
 
- /* ========== PARTNERS START ========= */
+	/* ========== PARTNERS START ========= */
 
- /* ========== PARTNERS  END =========  */
+	/* ========== PARTNERS  END =========  */
 
- /* ========== HELPS  START=========   */
+	/* ========== HELPS  START=========   */
 
- /* ========== HELPS  END =========  */
+	/* ========== HELPS  END =========  */
 
-/* ==========  OUR  FEATURES START =========  */
+	/* ==========  OUR  FEATURES START =========  */
 
-/* ==========  OUR  FEATURES END =========  */
+	/* ==========  OUR  FEATURES END =========  */
 
-/* ==========  WORKS  START ========= */
+	/* ==========  WORKS  START ========= */
 
-/* ==========  WORKS END ========= */
+	/* ==========  WORKS END ========= */
 
-/* ========== INDUSTRIES START =========  */
+	/* ========== INDUSTRIES START =========  */
 
-/* ========== INDUSTRIES END ========= */
+	/* ========== INDUSTRIES END ========= */
 
-/* ========== CUSTOMER START ========= */
+	/* ========== CUSTOMER START ========= */
 
-/* ========== CUSTOMER END =========  */
+	/* ========== CUSTOMER END =========  */
 
-/* ========== CONTACT  START =========  */
+	/* ========== CONTACT  START =========  */
 
-/* ========== CONTACT  END =========  */
+	/* ========== CONTACT  END =========  */
 
-/* ========== FOOTER START =========  */
+	/* ========== FOOTER START =========  */
 
-/* ========== FOOTER END =========  */
+	/* ========== FOOTER END =========  */
 }
 
 /* ============== DESKTOPS  LARGE  SCREENS  @media END ================ */
@@ -297,46 +296,46 @@
 		display: none;
 	}
 	/* ========== HEADER END =========   */
-    /* ========== HOME START =========   */
+	/* ========== HOME START =========   */
 
- /* ========== HOME  END  =========    */
+	/* ========== HOME  END  =========    */
 
- /* ========== PARTNERS START ========= */
+	/* ========== PARTNERS START ========= */
 
- /* ========== PARTNERS  END =========  */
+	/* ========== PARTNERS  END =========  */
 
- /* ========== HELPS  START=========   */
+	/* ========== HELPS  START=========   */
 
- /* ========== HELPS  END =========  */
+	/* ========== HELPS  END =========  */
 
-/* ==========  OUR  FEATURES START =========  */
+	/* ==========  OUR  FEATURES START =========  */
 
-/* ==========  OUR  FEATURES END =========  */
+	/* ==========  OUR  FEATURES END =========  */
 
-/* ==========  WORKS  START ========= */
+	/* ==========  WORKS  START ========= */
 
-/* ==========  WORKS END ========= */
+	/* ==========  WORKS END ========= */
 
-/* ========== INDUSTRIES START =========  */
+	/* ========== INDUSTRIES START =========  */
 
-/* ========== INDUSTRIES END ========= */
+	/* ========== INDUSTRIES END ========= */
 
-/* ========== CUSTOMER START ========= */
+	/* ========== CUSTOMER START ========= */
 
-/* ========== CUSTOMER END =========  */
+	/* ========== CUSTOMER END =========  */
 
-/* ========== CONTACT  START =========  */
+	/* ========== CONTACT  START =========  */
 
-/* ========== CONTACT  END =========  */
+	/* ========== CONTACT  END =========  */
 
-/* ========== FOOTER START =========  */
+	/* ========== FOOTER START =========  */
 
-/* ========== FOOTER END =========  */ 
+	/* ========== FOOTER END =========  */
 }
 /* ============== SMALL SCREENS LAPTOPS   @media END ================*/
 
 /*  ==============iPADS , TABLETS   @media START ================ */
- 
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
 	.container {
 		padding: 0 20px;
@@ -368,41 +367,41 @@
 	}
 	/* ========== HEADER END =========   */
 
-    /* ========== HOME START =========   */
+	/* ========== HOME START =========   */
 
- /* ========== HOME  END  =========    */
+	/* ========== HOME  END  =========    */
 
- /* ========== PARTNERS START ========= */
+	/* ========== PARTNERS START ========= */
 
- /* ========== PARTNERS  END =========  */
+	/* ========== PARTNERS  END =========  */
 
- /* ========== HELPS  START=========   */
+	/* ========== HELPS  START=========   */
 
- /* ========== HELPS  END =========  */
+	/* ========== HELPS  END =========  */
 
-/* ==========  OUR  FEATURES START =========  */
+	/* ==========  OUR  FEATURES START =========  */
 
-/* ==========  OUR  FEATURES END =========  */
+	/* ==========  OUR  FEATURES END =========  */
 
-/* ==========  WORKS  START ========= */
+	/* ==========  WORKS  START ========= */
 
-/* ==========  WORKS END ========= */
+	/* ==========  WORKS END ========= */
 
-/* ========== INDUSTRIES START =========  */
+	/* ========== INDUSTRIES START =========  */
 
-/* ========== INDUSTRIES END ========= */
+	/* ========== INDUSTRIES END ========= */
 
-/* ========== CUSTOMER START ========= */
+	/* ========== CUSTOMER START ========= */
 
-/* ========== CUSTOMER END =========  */
+	/* ========== CUSTOMER END =========  */
 
-/* ========== CONTACT  START =========  */
+	/* ========== CONTACT  START =========  */
 
-/* ========== CONTACT  END =========  */
+	/* ========== CONTACT  END =========  */
 
-/* ========== FOOTER START =========  */
+	/* ========== FOOTER START =========  */
 
-/* ========== FOOTER END =========  */  
+	/* ========== FOOTER END =========  */
 }
 /* ============== iPADS , TABLETS   @media  END ================*/
 
@@ -449,40 +448,40 @@
 	}
 	/* ========== HEADER END =========   */
 
-    /* ========== HOME START =========   */
+	/* ========== HOME START =========   */
 
-    /* ========== HOME  END  =========    */
+	/* ========== HOME  END  =========    */
 
-    /* ========== PARTNERS START ========= */
+	/* ========== PARTNERS START ========= */
 
-    /* ========== PARTNERS  END =========  */
+	/* ========== PARTNERS  END =========  */
 
-    /* ========== HELPS  START=========   */
+	/* ========== HELPS  START=========   */
 
-    /* ========== HELPS  END =========  */
+	/* ========== HELPS  END =========  */
 
-    /* ==========  OUR  FEATURES START =========  */
+	/* ==========  OUR  FEATURES START =========  */
 
-    /* ==========  OUR  FEATURES END =========  */
+	/* ==========  OUR  FEATURES END =========  */
 
-    /* ==========  WORKS  START ========= */
+	/* ==========  WORKS  START ========= */
 
-    /* ==========  WORKS END ========= */
+	/* ==========  WORKS END ========= */
 
-    /* ========== INDUSTRIES START =========  */
+	/* ========== INDUSTRIES START =========  */
 
-    /* ========== INDUSTRIES END ========= */
+	/* ========== INDUSTRIES END ========= */
 
-    /* ========== CUSTOMER START ========= */
+	/* ========== CUSTOMER START ========= */
 
-    /* ========== CUSTOMER END =========  */
+	/* ========== CUSTOMER END =========  */
 
-    /* ========== CONTACT  START =========  */
+	/* ========== CONTACT  START =========  */
 
-    /* ========== CONTACT  END =========  */
+	/* ========== CONTACT  END =========  */
 
-    /* ========== FOOTER START =========  */
+	/* ========== FOOTER START =========  */
 
-    /* ========== FOOTER END =========  */  
+	/* ========== FOOTER END =========  */
 }
 /* ============== MOBILE  DEVICES   @media  END ================*/
