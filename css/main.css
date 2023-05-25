@@ -170,28 +170,42 @@
 .main__buttons {
 	width: 450px;
 }
-/* .main__buttons .phone,
-.phone i {
-	color: var(--color-green);
-	cursor: pointer;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 27px; 
-} */
 .main__buttons .phone {
 	background: transparent;
 	color: var(--color-green);
 }
-/* .main__buttons .phone:hover {
-	border: 2px solid var(--color-green);
-	padding: 13px 27px;
-} */
+
+#main h4 {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: var(--color-green);
+	margin: 30px auto;
+}
 /* ========== HOME  END  =========    */
 
 /* ========== PARTNERS START ========= */
-
+#partners .company__list {
+	margin: 35px 0;
+	gap: 50px;
+}
+#partners .container {
+	overflow: hidden;
+}
+#partners .company__list .company__item {
+	animation: Company 15s linear infinite -5s;
+}
+@keyframes Company {
+	0% {
+		transform: translateX(-1200px);
+	}
+	100% {
+		transform: translateX(1200px);
+	}
+}
 /* ========== PARTNERS  END =========  */
 
 /* ========== HELPS  START=========   */
