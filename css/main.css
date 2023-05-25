@@ -19,14 +19,13 @@
 	--color-green: #13ab4e;
 	--color-white: #ffffff;
 }
-/* ========== HEADER START =========  */
 
 .d-flex {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
+/* ========== HEADER START =========  */
 #main {
 	background: url(../images/background-header.png) no-repeat;
 	background-size: cover;
