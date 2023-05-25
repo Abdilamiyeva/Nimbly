@@ -1,42 +1,151 @@
-
 /* fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
 }
-.container{
-    max-width: 1210px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
-:root{
-    --color-balck: #333333;
-    --color-green:#13AB4E;
-    --color-white:#FFFFFF;
+.container {
+	max-width: 1210px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 
- /* ========== HEADER START =========  */
+:root {
+	--color-balck: #333333;
+	--color-green: #13ab4e;
+	--color-white: #ffffff;
+}
+/* ========== HEADER START =========  */
 
- /* ========== HEADER END =========   */
+.d-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 
- /* ========== HOME START =========   */
+#main {
+	background: url(../images/background-header.png) no-repeat;
+	background-size: cover;
+}
+#main label,
+.dropdown__menu {
+	cursor: pointer;
+}
+.menu,
+.menu input {
+	display: none;
+}
+.menu .bar {
+	border: 2px solid var(--color-green);
+	width: 30px;
+	border-radius: 20px;
+	margin: 8px;
+}
+.dropdown__menu {
+	z-index: 3;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	transform: translateX(-200px);
+	transition: all 0.35s linear;
+}
+.dropdown__menu li {
+	padding: 10px 15px;
+	margin: 5px;
+	background: transparent;
+	width: 200px;
+	border: 2px solid transparent;
+	text-align: center;
+}
+.dropdown__menu li a {
+	background-color: transparent;
+	color: var(--color-balck);
+	font-weight: 400;
+	font-size: 20px;
+}
+.dropdown__menu li:hover {
+	border: 2px solid var(--color-green);
+}
+.dropdown__menu li:hover a {
+	color: var(--color-green);
+}
+.menu input[type="checkbox"]:checked ~ .dropdown__menu {
+	transform: translateX(0);
+}
 
- /* ========== HOME  END  =========    */
+#header {
+	height: 85px;
+	background: transparent;
+	padding: 20px 0;
+}
+.logo {
+	width: 148px;
+	height: 40px;
+}
+.nav {
+	gap: 40px;
+}
+.nav .nav__item a {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--color-balck);
+}
+.nav .nav__item:hover a {
+	color: var(--color-green);
+	border-bottom: 2px solid var(--color-green);
+}
+.header__buttons .sign__in,
+.header__buttons .demo {
+	padding: 13px 27px;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+	border: none;
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: all 0.4s linear;
+}
+.header__buttons .sign__in {
+	background: transparent;
+	color: var(--color-balck);
+	margin-right: 10px;
+}
+.header__buttons .demo {
+	background: var(--color-green);
+	border-radius: 4px;
+	color: var(--color-white);
+}
+.header__buttons .demo:hover,
+.header__buttons .sign__in:hover {
+	background: transparent;
+	color: var(--color-green);
+	border: 2px solid var(--color-green);
+}
+/* ========== HEADER END =========   */
 
- /* ========== PARTNERS START ========= */
+/* ========== HOME START =========   */
+.home .container .main__text {
+	width: 450px;
+}
+/* ========== HOME  END  =========    */
 
- /* ========== PARTNERS  END =========  */
+/* ========== PARTNERS START ========= */
 
- /* ========== HELPS  START=========   */
+/* ========== PARTNERS  END =========  */
 
- /* ========== HELPS  END =========  */
+/* ========== HELPS  START=========   */
+
+/* ========== HELPS  END =========  */
 
 /* ==========  OUR  FEATURES START =========  */
 
@@ -63,42 +172,127 @@
 /* ========== FOOTER END =========  */
 
 /* =============== EXTRA LARGE  SCREENS   @media   START ================ */
-@media screen and (min-width:1201px) {
-    .container{
-        padding: 0 20px;
-    }   
+@media screen and (min-width: 1201px) {
+	.container {
+		padding: 0 20px;
+	}
 }
 /* ============== EXTRA LARGE  SCREENS   @media   END  =================*/
 
 /* ============== DESKTOPS  LARGE  SCREENS  @media START ================ */
-@media screen and (min-width:1025px) and (max-width:1200px) {
-    .container{
-        padding: 0 20px;
-    }   
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+	.container {
+		padding: 0 20px;
+	}
 }
 /* ============== DESKTOPS  LARGE  SCREENS  @media END ================ */
 
-
 /* ============== SMALL SCREENS LAPTOPS   @media START ================ */
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .container{
-        padding: 0 20px;
-    }   
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.container {
+		padding: 0 20px;
+	}
+	/* ========== HEADER START =========  */
+	#header {
+		height: 79px;
+		padding: 17px 0;
+	}
+	.logo {
+		width: 140px;
+		height: 35px;
+	}
+	.nav {
+		gap: 4vw;
+	}
+	.header__buttons .sign__in,
+	.header__buttons .demo {
+		padding: 8px 15px;
+		font-size: 16px;
+	}
+	.header__buttons .sign__in {
+		margin-right: 0;
+	}
+	.header__buttons .demo {
+		display: none;
+	}
+	/* ========== HEADER END =========   */
 }
 /* ============== SMALL SCREENS LAPTOPS   @media END ================*/
 
 /*  ==============iPADS , TABLETS   @media START ================ */
-@media screen and (min-width:481px) and (max-width:768px) {
-    .container{
-        padding: 0 20px;
-    }   
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.container {
+		padding: 0 20px;
+	}
+	/* ========== HEADER START =========  */
+	.menu {
+		display: inline-block;
+		position: relative;
+	}
+	.logo {
+		width: 130px;
+	}
+	.nav {
+		display: none;
+	}
+	.nav .nav__item a {
+		font-size: 15px;
+	}
+	.header__buttons .sign__in,
+	.header__buttons .demo {
+		padding: 8px 15px;
+		font-size: 16px;
+	}
+	.header__buttons .sign__in {
+		margin-right: 0;
+	}
+	.header__buttons .demo {
+		display: none;
+	}
+	/* ========== HEADER END =========   */
 }
 /* ============== iPADS , TABLETS   @media  END ================*/
 
 /* ============== MOBILE  DEVICES   @media START ================*/
-@media screen and (min-width:320px) and (max-width:480px) {
-    .container{
-        padding: 0 20px;
-    }   
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.container {
+		padding: 0 20px;
+	}
+	/* ========== HEADER START =========  */
+	#header {
+		height: 70px;
+		padding: 5px 0;
+	}
+	.menu {
+		display: inline-block;
+	}
+	.menu .bar {
+		border: 2px solid var(--color-green);
+		width: 30px;
+		border-radius: 20px;
+		margin: 8px;
+	}
+	.logo {
+		width: 130px;
+		height: 30px;
+	}
+	.nav {
+		display: none;
+	}
+	.header__buttons .sign__in,
+	.header__buttons .demo {
+		padding: 8px 15px;
+		font-size: 16px;
+	}
+	.header__buttons .sign__in {
+		margin-right: 0;
+	}
+	.header__buttons .sign__in span {
+		display: none;
+	}
+	.header__buttons .demo {
+		display: none;
+	}
+	/* ========== HEADER END =========   */
 }
 /* ============== MOBILE  DEVICES   @media  END ================*/
