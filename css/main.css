@@ -102,7 +102,9 @@
 	border-bottom: 2px solid var(--color-green);
 }
 .header__buttons .sign__in,
-.header__buttons .demo {
+.header__buttons .demo,
+.demo,
+.phone {
 	padding: 13px 27px;
 	font-family: "Poppins";
 	font-style: normal;
@@ -119,13 +121,16 @@
 	color: var(--color-balck);
 	margin-right: 10px;
 }
-.header__buttons .demo {
+.header__buttons .demo,
+.demo,
+.phone {
 	background: var(--color-green);
 	border-radius: 4px;
 	color: var(--color-white);
 }
 .header__buttons .demo:hover,
-.header__buttons .sign__in:hover {
+.header__buttons .sign__in:hover,
+.demo:hover, .phone:hover {
 	background: transparent;
 	color: var(--color-green);
 	border: 2px solid var(--color-green);
@@ -134,12 +139,73 @@
 
 /* ========== HOME START =========   */
 .home .container .main__text {
+	width: 550px;
+}
+.home .container .main__img,
+.main__img img {
+	width: 550px;
+	margin-right: 40px;
+}
+.main__text h1 {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 72px;
+	color: var(--color-balck);
+	margin: 10px 0;
+}
+.green__color {
+	color: var(--color-green);
+}
+.main__text p {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 36px;
+	color: var(--color-balck);
+	padding: 14px 0 30px;
+}
+.main__buttons {
 	width: 450px;
+}
+.main__buttons .phone {
+	background: transparent;
+	color: var(--color-green);
+}
+
+#main h4 {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: var(--color-green);
+	margin: 30px auto;
 }
 /* ========== HOME  END  =========    */
 
 /* ========== PARTNERS START ========= */
-
+#partners .company__list {
+	margin: 35px 0;
+	gap: 50px;
+}
+#partners .container {
+	overflow: hidden;
+}
+#partners .company__list .company__item {
+	animation: Company 15s linear infinite -5s;
+}
+@keyframes Company {
+	0% {
+		transform: translateX(-1200px);
+	}
+	100% {
+		transform: translateX(1200px);
+	}
+}
 /* ========== PARTNERS  END =========  */
 
 /* ========== HELPS  START=========   */
@@ -260,11 +326,156 @@
 /* ========== INDUSTRIES END ========= */
 
 /* ========== CUSTOMER START ========= */
+.first__section{
+    max-width: 1210px;
+    background-image: url(../images/section-testimonials.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.first__section .customer__say{
+    padding-top: 56px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #0D7D38;
+}
+.first__section .nimbly{
+    max-width: 732px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+}
+.first__section .from__start{
+    max-width: 586px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+.second__section{
+    display: flex;
+    gap: 44px;
+    margin-top: 96px;
+}
+.nimbly__items{
+    margin-top: 30px;
+}
+.nimbly__items .description{
+    max-width: 670px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+}
+.nimbly__items .company__brand{
+    display: flex;
+    gap: 42px;
+}
+.nimbly__items .icons{
+   max-width: 100%;
+   border: 1 px solid red;
+    margin-top: 26px;
+}
+.company__brand .logo{
+    margin-top: 10px;
+}
+.company__brand .tondi__sihombing{
+    margin-top: 30px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
+.company__brand span{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
 
 /* ========== CUSTOMER END =========  */
 
 /* ========== CONTACT  START =========  */
-
+.third__section{
+    text-align: center;
+}
+.third__section .empower{
+    margin-top: 167px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+}
+.third__section .registration{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+.wrapper__registration{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.name{
+    margin-top: 32px;
+}
+.name .full__name{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+ .name input{
+    background-color: rgb(206, 204, 204);
+    outline: none;
+    border: none;
+    margin: 0 auto;
+}
+.name .enter__name{
+    max-width: 522px;
+    height: 64px;
+    background-color: rgb(206, 204, 204);
+    border-radius: 8px;
+    margin-top: 12px;
+    text-align: start;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+.for__registr{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.request_demo{
+    max-width: 522px;
+    height: 74px;
+    margin-top: 28px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--color-green);
+    padding: 24px;
+    background: var(--color-white);
+    border-radius: 8px;
+}
+.request_demo:hover{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    cursor: pointer;
+}
 /* ========== CONTACT  END =========  */
 
 /* ========== FOOTER START =========  */
@@ -329,7 +540,22 @@
 	/* ========== HEADER END =========   */
 
 	/* ========== HOME START =========   */
-
+	.home .container .main__text {
+		width: 500px;
+		justify-content: center;
+	}
+	.home .container .main__img,
+	.main__img img {
+		width: 480px;
+		height: 480px;
+	}
+	.main__text h1 {
+		font-size: 42px;
+		line-height: 70px;
+	}
+	.main__text p {
+		font-size: 17px;
+	}
 	/* ========== HOME  END  =========    */
 
 	/* ========== PARTNERS START ========= */
@@ -377,6 +603,27 @@
 
 /* ============== SMALL SCREENS LAPTOPS   @media START ================ */
 
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .container{
+        padding: 0 20px;
+    }   
+    .first__section .nimbly{
+        font-size: 36px;
+    }
+    .second__section{
+        justify-content: center;
+    }
+    .second__section .image{
+       display: none;
+    }
+    .second__section .company__brand{
+        width: 80%;
+        justify-content: end;
+    }
+    .second__section .nimbly__items .icons{
+        text-align: center;
+  }
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 	.container {
 		padding: 0 20px;
@@ -406,7 +653,28 @@
 	}
 	/* ========== HEADER END =========   */
 	/* ========== HOME START =========   */
-
+	.home .container {
+		justify-content: space-around;
+	}
+	.home .container .main__text {
+		width: 380px;
+	}
+	.home .container .main__img,
+	.main__img img {
+		width: 360px;
+		height: 360px;
+		margin-right: 30px;
+	}
+	.main__text h1 {
+		font-size: 32px;
+		line-height: 45px;
+	}
+	.main__text p {
+		font-size: 14px;
+	}
+	.main__buttons {
+		width: 433px;
+	}
 	/* ========== HOME  END  =========    */
 
 	/* ========== PARTNERS START ========= */
@@ -456,6 +724,37 @@
 
 /*  ==============iPADS , TABLETS   @media START ================ */
 
+@media screen and (min-width:481px) and (max-width:768px) {
+    .container{
+        padding: 0 20px;
+    }   
+    .first__section .nimbly{
+        font-size: 36px;
+    }
+    .second__section{
+        justify-content: center;
+    }
+    .second__section .nimbly__items .description{
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+     }
+    .second__section .image{
+       display: none;
+    }
+    .second__section .company__brand{
+        width: 80%;
+        justify-content: end;
+    }
+    .second__section .nimbly__items .icons{
+        text-align: center;
+    }
+    .third__section .empower{
+        font-size: 30px;
+    }
+
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
 	.container {
 		padding: 0 20px;
@@ -488,7 +787,22 @@
 	/* ========== HEADER END =========   */
 
 	/* ========== HOME START =========   */
-
+	.home .container {
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.home .container .main__text {
+		width: 100%;
+	}
+	.home .container .main__img,
+	.main__img img {
+		margin-right: 35px;
+		width: 100%;
+	}
+	.main__buttons {
+		width: 100%;
+		justify-content: space-around;
+	}
 	/* ========== HOME  END  =========    */
 
 	/* ========== PARTNERS START ========= */
@@ -531,10 +845,47 @@
 	/* ========== FOOTER START =========  */
 
 	/* ========== FOOTER END =========  */
+
 }
 /* ============== iPADS , TABLETS   @media  END ================*/
 
 /* ============== MOBILE  DEVICES   @media START ================*/
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .container{
+        padding: 0 20px;
+    }  
+    .first__section .customer__say{
+        font-size: 12px;
+    } 
+    .first__section .from__start{
+        font-size: 12px;
+    } 
+    .first__section .nimbly{
+        font-size: 24px;
+        align-items: center;
+    }
+    .second__section .image{
+        display: none;
+     }
+     .second__section .nimbly__items .description{
+        font-size: 16px;
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+     }
+     .second__section .company__brand{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .second__section .nimbly__items .icons{
+        text-align: center;
+    }
+    .third__section .empower{
+        font-size: 24px;
+    }
+
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 	.container {
@@ -578,6 +929,45 @@
 	/* ========== HEADER END =========   */
 
 	/* ========== HOME START =========   */
+	.home .container {
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.home .container .main__text {
+		width: 100%;
+	}
+	.home .container .main__img,
+	.main__img img {
+		width: 100%;
+		margin-right: 35px;
+		margin-top: 10px;
+	}
+	.main__text h1 {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.green__color {
+		color: var(--color-green);
+	}
+	.main__text p {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 36px;
+		color: var(--color-balck);
+		padding-bottom: 0;
+	}
+	.main__buttons {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.main__buttons .demo,
+	.main__buttons .phone {
+		width: 100%;
+		margin: 20px 0;
+		text-align: center;
+	}
 
 	/* ========== HOME  END  =========    */
 
@@ -612,5 +1002,6 @@
 	/* ========== FOOTER START =========  */
 
 	/* ========== FOOTER END =========  */
+
 }
 /* ============== MOBILE  DEVICES   @media  END ================*/
