@@ -94,6 +94,7 @@
 						/>
 					</div>
 				</div>
+			</div>
 				<div class="container">
 					<h4>
 						Trusted by 10,000+ the world’s fastest growing companies including:
@@ -171,6 +172,57 @@
 		<!-- ==========  OUR  FEATURES START ========= -->
 
 		<!-- ==========  OUR  FEATURES END ========= -->
+		 <section class="features">
+			<div class="container">
+				<div class="features__in">
+					<div class="features__title">
+						<h2 >OUR FEATURES</h2>
+						<p>
+							Discover How Our Features Can
+							Simplify Your Work Flow
+						</p>
+					</div>
+					
+					  
+					  <div class="bar black d-flex">
+						<button class="bar__item button " onclick="openCity('real-time')"><i class="fas fa-regular fa-business-time"></i>  Real-time Audits </button>
+						<button class="bar__item button" onclick="openCity('digital__audits')"> <i class="fa-solid fa-calendar-days"></i>Easy Digital Audits</button>
+						<button class="bar__item button" onclick="openCity('issue__tracker')"> <i class="fa-solid fa-calendar-days"></i>Issue Tracker</button>
+						<button class="bar__item button" onclick="openCity('issue__tracker')"><i class="fa-solid fa-calendar-days"></i>Robust Validation</button>
+						<button class="bar__item button" onclick="openCity('issue__tracker')"><i class="fa-solid fa-calendar-days"></i>Report & Analytics</button>
+						
+
+					  </div>
+					  <div id="real-time" class="w3-container w3-display-container feature ">
+						<span  onclick="this.parentElement.style.display='none'"
+						class="button w3-large w3-display-topright">&times;</span>
+						
+						<p>You can optimize inspections with visual promoting guides to ensure products and services are being delivered consistently across the company. <a href="#"> Learn more.</a></p>
+						<div class="feature__img">
+							<img src="./images/Easily__create__and__automate__reports.png" alt="" loading="lazy">
+						</div>
+					  </div>
+					  <div id="digital__audits" class="w3-container w3-display-container feature" style="display:none">
+						<span onclick="this.parentElement.style.display='none'"
+						class="button w3-large w3-display-topright">&times;</span>
+						<p>You can optimize inspections with visual promoting guides to ensure products and services are being delivered consistently across the company. <a href="#"> Learn more.</a></p>
+						<div class="feature__img">
+							<img src="./images/Easily__create__and__automate__reports.png" alt="" loading="lazy">
+						</div>
+						
+					  </div>
+					  
+					  <div id="issue__tracker" class="w3-container w3-display-container feature" style="display:none">
+						<span onclick="this.parentElement.style.display='none'"
+						class="button w3-large w3-display-topright">&times;</span>
+						<p>By using our issue tracker and resolution monitoring technologies, all your problems will be resolved according to your SLA. <a href="#"> Learn more.</a></p>
+						<div class="feature__img">
+							<img src="./images/Issue__Tracker__img.png" alt="" loading="lazy">
+						</div>
+					  </div>
+				</div>
+			</div>
+		 </section>
 		<!-- ==========  WORKS  START ========= -->
 
 		<!-- ==========  WORKS END ========= -->
@@ -262,5 +314,15 @@
 		<!-- ========== FOOTER START ========= -->
 
 		<!-- ========== FOOTER END ========= -->
+		<script>
+			function openCity(cityName) {
+			  var i;
+			  var x = document.getElementsByClassName("feature");
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  document.getElementById(cityName).style.display = "block";  
+			}
+			</script>
 	</body>
 </html>
