@@ -225,11 +225,156 @@
 /* ========== INDUSTRIES END ========= */
 
 /* ========== CUSTOMER START ========= */
+.first__section{
+    max-width: 1210px;
+    background-image: url(../images/section-testimonials.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.first__section .customer__say{
+    padding-top: 56px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #0D7D38;
+}
+.first__section .nimbly{
+    max-width: 732px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+}
+.first__section .from__start{
+    max-width: 586px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+.second__section{
+    display: flex;
+    gap: 44px;
+    margin-top: 96px;
+}
+.nimbly__items{
+    margin-top: 30px;
+}
+.nimbly__items .description{
+    max-width: 670px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 42px;
+}
+.nimbly__items .company__brand{
+    display: flex;
+    gap: 42px;
+}
+.nimbly__items .icons{
+   max-width: 100%;
+   border: 1 px solid red;
+    margin-top: 26px;
+}
+.company__brand .logo{
+    margin-top: 10px;
+}
+.company__brand .tondi__sihombing{
+    margin-top: 30px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+}
+.company__brand span{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+
 
 /* ========== CUSTOMER END =========  */
 
 /* ========== CONTACT  START =========  */
-
+.third__section{
+    text-align: center;
+}
+.third__section .empower{
+    margin-top: 167px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+}
+.third__section .registration{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+.wrapper__registration{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.name{
+    margin-top: 32px;
+}
+.name .full__name{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+ .name input{
+    background-color: rgb(206, 204, 204);
+    outline: none;
+    border: none;
+    margin: 0 auto;
+}
+.name .enter__name{
+    max-width: 522px;
+    height: 64px;
+    background-color: rgb(206, 204, 204);
+    border-radius: 8px;
+    margin-top: 12px;
+    text-align: start;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+.for__registr{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.request_demo{
+    max-width: 522px;
+    height: 74px;
+    margin-top: 28px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--color-green);
+    padding: 24px;
+    background: var(--color-white);
+    border-radius: 8px;
+}
+.request_demo:hover{
+    background-color: var(--color-green);
+    color: var(--color-white);
+    cursor: pointer;
+}
 /* ========== CONTACT  END =========  */
 
 /* ========== FOOTER START =========  */
@@ -349,6 +494,27 @@
 
 /* ============== SMALL SCREENS LAPTOPS   @media START ================ */
 
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .container{
+        padding: 0 20px;
+    }   
+    .first__section .nimbly{
+        font-size: 36px;
+    }
+    .second__section{
+        justify-content: center;
+    }
+    .second__section .image{
+       display: none;
+    }
+    .second__section .company__brand{
+        width: 80%;
+        justify-content: end;
+    }
+    .second__section .nimbly__items .icons{
+        text-align: center;
+  }
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 	.container {
 		padding: 0 20px;
@@ -438,6 +604,37 @@
 
 /*  ==============iPADS , TABLETS   @media START ================ */
 
+@media screen and (min-width:481px) and (max-width:768px) {
+    .container{
+        padding: 0 20px;
+    }   
+    .first__section .nimbly{
+        font-size: 36px;
+    }
+    .second__section{
+        justify-content: center;
+    }
+    .second__section .nimbly__items .description{
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+     }
+    .second__section .image{
+       display: none;
+    }
+    .second__section .company__brand{
+        width: 80%;
+        justify-content: end;
+    }
+    .second__section .nimbly__items .icons{
+        text-align: center;
+    }
+    .third__section .empower{
+        font-size: 30px;
+    }
+
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
 	.container {
 		padding: 0 20px;
@@ -519,10 +716,47 @@
 	/* ========== FOOTER START =========  */
 
 	/* ========== FOOTER END =========  */
+
 }
 /* ============== iPADS , TABLETS   @media  END ================*/
 
 /* ============== MOBILE  DEVICES   @media START ================*/
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    .container{
+        padding: 0 20px;
+    }  
+    .first__section .customer__say{
+        font-size: 12px;
+    } 
+    .first__section .from__start{
+        font-size: 12px;
+    } 
+    .first__section .nimbly{
+        font-size: 24px;
+        align-items: center;
+    }
+    .second__section .image{
+        display: none;
+     }
+     .second__section .nimbly__items .description{
+        font-size: 16px;
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+     }
+     .second__section .company__brand{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .second__section .nimbly__items .icons{
+        text-align: center;
+    }
+    .third__section .empower{
+        font-size: 24px;
+    }
+
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
 	.container {
@@ -639,5 +873,6 @@
 	/* ========== FOOTER START =========  */
 
 	/* ========== FOOTER END =========  */
+
 }
 /* ============== MOBILE  DEVICES   @media  END ================*/
