@@ -1,42 +1,216 @@
-
 /* fonts  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
 }
-.container{
-    max-width: 1210px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
-
-:root{
-    --color-balck: #333333;
-    --color-green:#13AB4E;
-    --color-white:#FFFFFF;
+.container {
+	max-width: 1210px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 
- /* ========== HEADER START =========  */
+:root {
+	--color-balck: #333333;
+	--color-green: #13ab4e;
+	--color-white: #ffffff;
+}
 
- /* ========== HEADER END =========   */
+.d-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/* ========== HEADER START =========  */
+#main {
+	background: url(../images/background-header.png) no-repeat;
+	background-size: cover;
+}
+#main label,
+.dropdown__menu {
+	cursor: pointer;
+}
+.menu,
+.menu input {
+	display: none;
+}
+.menu .bar {
+	border: 2px solid var(--color-green);
+	width: 30px;
+	border-radius: 20px;
+	margin: 8px;
+}
+.dropdown__menu {
+	z-index: 3;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	transform: translateX(-200px);
+	transition: all 0.35s linear;
+}
+.dropdown__menu li {
+	padding: 10px 15px;
+	margin: 5px;
+	background: transparent;
+	width: 200px;
+	border: 2px solid transparent;
+	text-align: center;
+}
+.dropdown__menu li a {
+	background-color: transparent;
+	color: var(--color-balck);
+	font-weight: 400;
+	font-size: 20px;
+}
+.dropdown__menu li:hover {
+	border: 2px solid var(--color-green);
+}
+.dropdown__menu li:hover a {
+	color: var(--color-green);
+}
+.menu input[type="checkbox"]:checked ~ .dropdown__menu {
+	transform: translateX(0);
+}
 
- /* ========== HOME START =========   */
+#header {
+	height: 85px;
+	background: transparent;
+	padding: 20px 0;
+}
+.logo {
+	width: 148px;
+	height: 40px;
+}
+.nav {
+	gap: 40px;
+}
+.nav .nav__item a {
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--color-balck);
+}
+.nav .nav__item:hover a {
+	color: var(--color-green);
+	border-bottom: 2px solid var(--color-green);
+}
+.header__buttons .sign__in,
+.header__buttons .demo,
+.demo,
+.phone {
+	padding: 13px 27px;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+	border: none;
+	cursor: pointer;
+	border: 2px solid transparent;
+	transition: all 0.4s linear;
+}
+.header__buttons .sign__in {
+	background: transparent;
+	color: var(--color-balck);
+	margin-right: 10px;
+}
+.header__buttons .demo,
+.demo,
+.phone {
+	background: var(--color-green);
+	border-radius: 4px;
+	color: var(--color-white);
+}
+.header__buttons .demo:hover,
+.header__buttons .sign__in:hover,
+.demo:hover, .phone:hover {
+	background: transparent;
+	color: var(--color-green);
+	border: 2px solid var(--color-green);
+}
+/* ========== HEADER END =========   */
 
- /* ========== HOME  END  =========    */
+/* ========== HOME START =========   */
+.home .container .main__text {
+	width: 550px;
+}
+.home .container .main__img,
+.main__img img {
+	width: 550px;
+	margin-right: 40px;
+}
+.main__text h1 {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 72px;
+	color: var(--color-balck);
+	margin: 10px 0;
+}
+.green__color {
+	color: var(--color-green);
+}
+.main__text p {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 36px;
+	color: var(--color-balck);
+	padding: 14px 0 30px;
+}
+.main__buttons {
+	width: 450px;
+}
+.main__buttons .phone {
+	background: transparent;
+	color: var(--color-green);
+}
 
- /* ========== PARTNERS START ========= */
+#main h4 {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: var(--color-green);
+	margin: 30px auto;
+}
+/* ========== HOME  END  =========    */
 
- /* ========== PARTNERS  END =========  */
+/* ========== PARTNERS START ========= */
+#partners .company__list {
+	margin: 35px 0;
+	gap: 50px;
+}
+#partners .container {
+	overflow: hidden;
+}
+#partners .company__list .company__item {
+	animation: Company 15s linear infinite -5s;
+}
+@keyframes Company {
+	0% {
+		transform: translateX(-1200px);
+	}
+	100% {
+		transform: translateX(1200px);
+	}
+}
+/* ========== PARTNERS  END =========  */
 
- /* ========== HELPS  START=========   */
+/* ========== HELPS  START=========   */
 
- /* ========== HELPS  END =========  */
+/* ========== HELPS  END =========  */
 
 /* ==========  OUR  FEATURES START =========  */
 
@@ -208,23 +382,118 @@
 /* ========== FOOTER END =========  */
 
 /* =============== EXTRA LARGE  SCREENS   @media   START ================ */
-@media screen and (min-width:1201px) {
-    .container{
-        padding: 0 20px;
-    }   
+@media screen and (min-width: 1201px) {
+	.container {
+		padding: 0 20px;
+	}
+	/* ========== HEADER START =========  */
+
+	/* ========== HEADER END =========   */
+
+	/* ========== HOME START =========   */
+
+	/* ========== HOME  END  =========    */
+
+	/* ========== PARTNERS START ========= */
+
+	/* ========== PARTNERS  END =========  */
+
+	/* ========== HELPS  START=========   */
+
+	/* ========== HELPS  END =========  */
+
+	/* ==========  OUR  FEATURES START =========  */
+
+	/* ==========  OUR  FEATURES END =========  */
+
+	/* ==========  WORKS  START ========= */
+
+	/* ==========  WORKS END ========= */
+
+	/* ========== INDUSTRIES START =========  */
+
+	/* ========== INDUSTRIES END ========= */
+
+	/* ========== CUSTOMER START ========= */
+
+	/* ========== CUSTOMER END =========  */
+
+	/* ========== CONTACT  START =========  */
+
+	/* ========== CONTACT  END =========  */
+
+	/* ========== FOOTER START =========  */
+
+	/* ========== FOOTER END =========  */
 }
+
 /* ============== EXTRA LARGE  SCREENS   @media   END  =================*/
 
 /* ============== DESKTOPS  LARGE  SCREENS  @media START ================ */
-@media screen and (min-width:1025px) and (max-width:1200px) {
-    .container{
-        padding: 0 20px;
-    }   
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+	.container {
+		padding: 0 20px;
+	}
+	/* ========== HEADER START =========  */
+
+	/* ========== HEADER END =========   */
+
+	/* ========== HOME START =========   */
+	.home .container .main__text {
+		width: 500px;
+		justify-content: center;
+	}
+	.home .container .main__img,
+	.main__img img {
+		width: 480px;
+		height: 480px;
+	}
+	.main__text h1 {
+		font-size: 42px;
+		line-height: 70px;
+	}
+	.main__text p {
+		font-size: 17px;
+	}
+	/* ========== HOME  END  =========    */
+
+	/* ========== PARTNERS START ========= */
+
+	/* ========== PARTNERS  END =========  */
+
+	/* ========== HELPS  START=========   */
+
+	/* ========== HELPS  END =========  */
+
+	/* ==========  OUR  FEATURES START =========  */
+
+	/* ==========  OUR  FEATURES END =========  */
+
+	/* ==========  WORKS  START ========= */
+
+	/* ==========  WORKS END ========= */
+
+	/* ========== INDUSTRIES START =========  */
+
+	/* ========== INDUSTRIES END ========= */
+
+	/* ========== CUSTOMER START ========= */
+
+	/* ========== CUSTOMER END =========  */
+
+	/* ========== CONTACT  START =========  */
+
+	/* ========== CONTACT  END =========  */
+
+	/* ========== FOOTER START =========  */
+
+	/* ========== FOOTER END =========  */
 }
+
 /* ============== DESKTOPS  LARGE  SCREENS  @media END ================ */
 
-
 /* ============== SMALL SCREENS LAPTOPS   @media START ================ */
+
 @media screen and (min-width:769px) and (max-width:1024px) {
     .container{
         padding: 0 20px;
@@ -244,11 +513,97 @@
     }
     .second__section .nimbly__items .icons{
         text-align: center;
-    }
+  }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.container {
+		padding: 0 20px;
+	}
+	/* ========== HEADER START =========  */
+	#header {
+		height: 79px;
+		padding: 17px 0;
+	}
+	.logo {
+		width: 140px;
+		height: 35px;
+	}
+	.nav {
+		gap: 4vw;
+	}
+	.header__buttons .sign__in,
+	.header__buttons .demo {
+		padding: 8px 15px;
+		font-size: 16px;
+	}
+	.header__buttons .sign__in {
+		margin-right: 0;
+	}
+	.header__buttons .demo {
+		display: none;
+	}
+	/* ========== HEADER END =========   */
+	/* ========== HOME START =========   */
+	.home .container {
+		justify-content: space-around;
+	}
+	.home .container .main__text {
+		width: 380px;
+	}
+	.home .container .main__img,
+	.main__img img {
+		width: 360px;
+		height: 360px;
+		margin-right: 30px;
+	}
+	.main__text h1 {
+		font-size: 32px;
+		line-height: 45px;
+	}
+	.main__text p {
+		font-size: 14px;
+	}
+	.main__buttons {
+		width: 433px;
+	}
+	/* ========== HOME  END  =========    */
+
+	/* ========== PARTNERS START ========= */
+
+	/* ========== PARTNERS  END =========  */
+
+	/* ========== HELPS  START=========   */
+
+	/* ========== HELPS  END =========  */
+
+	/* ==========  OUR  FEATURES START =========  */
+
+	/* ==========  OUR  FEATURES END =========  */
+
+	/* ==========  WORKS  START ========= */
+
+	/* ==========  WORKS END ========= */
+
+	/* ========== INDUSTRIES START =========  */
+
+	/* ========== INDUSTRIES END ========= */
+
+	/* ========== CUSTOMER START ========= */
+
+	/* ========== CUSTOMER END =========  */
+
+	/* ========== CONTACT  START =========  */
+
+	/* ========== CONTACT  END =========  */
+
+	/* ========== FOOTER START =========  */
+
+	/* ========== FOOTER END =========  */
 }
 /* ============== SMALL SCREENS LAPTOPS   @media END ================*/
 
 /*  ==============iPADS , TABLETS   @media START ================ */
+
 @media screen and (min-width:481px) and (max-width:768px) {
     .container{
         padding: 0 20px;
@@ -278,10 +633,95 @@
     .third__section .empower{
         font-size: 30px;
     }
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.container {
+		padding: 0 20px;
+	}
+	/* ========== HEADER START =========  */
+	.menu {
+		display: inline-block;
+		position: relative;
+	}
+	.logo {
+		width: 130px;
+	}
+	.nav {
+		display: none;
+	}
+	.nav .nav__item a {
+		font-size: 15px;
+	}
+	.header__buttons .sign__in,
+	.header__buttons .demo {
+		padding: 8px 15px;
+		font-size: 16px;
+	}
+	.header__buttons .sign__in {
+		margin-right: 0;
+	}
+	.header__buttons .demo {
+		display: none;
+	}
+	/* ========== HEADER END =========   */
+
+	/* ========== HOME START =========   */
+	.home .container {
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.home .container .main__text {
+		width: 100%;
+	}
+	.home .container .main__img,
+	.main__img img {
+		margin-right: 35px;
+		width: 100%;
+	}
+	.main__buttons {
+		width: 100%;
+		justify-content: space-around;
+	}
+	/* ========== HOME  END  =========    */
+
+	/* ========== PARTNERS START ========= */
+
+	/* ========== PARTNERS  END =========  */
+
+	/* ========== HELPS  START=========   */
+
+	/* ========== HELPS  END =========  */
+
+	/* ==========  OUR  FEATURES START =========  */
+
+	/* ==========  OUR  FEATURES END =========  */
+
+	/* ==========  WORKS  START ========= */
+
+	/* ==========  WORKS END ========= */
+
+	/* ========== INDUSTRIES START =========  */
+
+	/* ========== INDUSTRIES END ========= */
+
+	/* ========== CUSTOMER START ========= */
+
+	/* ========== CUSTOMER END =========  */
+
+	/* ========== CONTACT  START =========  */
+
+	/* ========== CONTACT  END =========  */
+
+	/* ========== FOOTER START =========  */
+
+	/* ========== FOOTER END =========  */
+
 }
 /* ============== iPADS , TABLETS   @media  END ================*/
 
 /* ============== MOBILE  DEVICES   @media START ================*/
+
 @media screen and (min-width:320px) and (max-width:480px) {
     .container{
         padding: 0 20px;
@@ -316,5 +756,123 @@
     .third__section .empower{
         font-size: 24px;
     }
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.container {
+		padding: 0 20px;
+	}
+	/* ========== HEADER START =========  */
+	#header {
+		height: 70px;
+		padding: 5px 0;
+	}
+	.menu {
+		display: inline-block;
+	}
+	.menu .bar {
+		border: 2px solid var(--color-green);
+		width: 30px;
+		border-radius: 20px;
+		margin: 8px;
+	}
+	.logo {
+		width: 130px;
+		height: 30px;
+	}
+	.nav {
+		display: none;
+	}
+	.header__buttons .sign__in,
+	.header__buttons .demo {
+		padding: 8px 15px;
+		font-size: 16px;
+	}
+	.header__buttons .sign__in {
+		margin-right: 0;
+	}
+	.header__buttons .sign__in span {
+		display: none;
+	}
+	.header__buttons .demo {
+		display: none;
+	}
+	/* ========== HEADER END =========   */
+
+	/* ========== HOME START =========   */
+	.home .container {
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.home .container .main__text {
+		width: 100%;
+	}
+	.home .container .main__img,
+	.main__img img {
+		width: 100%;
+		margin-right: 35px;
+		margin-top: 10px;
+	}
+	.main__text h1 {
+		font-size: 30px;
+		line-height: 36px;
+	}
+	.green__color {
+		color: var(--color-green);
+	}
+	.main__text p {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 36px;
+		color: var(--color-balck);
+		padding-bottom: 0;
+	}
+	.main__buttons {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	.main__buttons .demo,
+	.main__buttons .phone {
+		width: 100%;
+		margin: 20px 0;
+		text-align: center;
+	}
+
+	/* ========== HOME  END  =========    */
+
+	/* ========== PARTNERS START ========= */
+
+	/* ========== PARTNERS  END =========  */
+
+	/* ========== HELPS  START=========   */
+
+	/* ========== HELPS  END =========  */
+
+	/* ==========  OUR  FEATURES START =========  */
+
+	/* ==========  OUR  FEATURES END =========  */
+
+	/* ==========  WORKS  START ========= */
+
+	/* ==========  WORKS END ========= */
+
+	/* ========== INDUSTRIES START =========  */
+
+	/* ========== INDUSTRIES END ========= */
+
+	/* ========== CUSTOMER START ========= */
+
+	/* ========== CUSTOMER END =========  */
+
+	/* ========== CONTACT  START =========  */
+
+	/* ========== CONTACT  END =========  */
+
+	/* ========== FOOTER START =========  */
+
+	/* ========== FOOTER END =========  */
+
 }
 /* ============== MOBILE  DEVICES   @media  END ================*/
