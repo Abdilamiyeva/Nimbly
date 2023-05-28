@@ -1461,7 +1461,6 @@
 	.faq-drawer__trigger:checked + .faq-drawer__title::after {
 		transform: rotate(-45deg);
 		transition: 0.25s ease-in-out;
-		/* color: var(--color-green); */
 	}
 	input[type="checkbox"] {
 	display: none;
