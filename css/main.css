@@ -733,21 +733,26 @@ display: none;
 	right: 0;
 }
 
-.works .works-field .col:last-child .row ul li i:before,
-.works .works-field .col:last-child .row ul li i:after {
+.works .works-field .col:last-child .row ul li .option i:before,
+.works .works-field .col:last-child .row ul li .option i:after {
 	content: "";
 	position: absolute;
-	background-color: var(--btn-bg-green-color);
+	background-color:#000;
 	width: 3px;
 	height: 9px;
 }
-
-.works .works-field .col:last-child .row ul li i:before {
+.works .works-field .col:last-child .row .option{
+	justify-content: start;
+	gap: 30px;
+}
+.works .works-field .col:last-child .row ul li .option i:before {
 	transform: translate(-2px, 0) rotate(45deg);
+	background: var(--color-green);
 }
 
-.works .works-field .col:last-child .row ul li i:after {
+.works .works-field .col:last-child .row ul li .option i:after {
 	transform: translate(2px, 0) rotate(-45deg);
+	background: var(--color-green);
 }
 
 .works .works-field .col:last-child .row ul li input[type="checkbox"] {
@@ -765,12 +770,15 @@ display: none;
 	opacity: 0;
 	transform: translate(0, 50%);
 }
-
-.works .works-field .col:last-child .row ul li input[type="checkbox"]:checked~i:before {
+.works .works-field .col:last-child .row ul li input[type="checkbox"]:checked~.option i::before,
+.works .works-field .col:last-child .row ul li input[type="checkbox"]:checked~.option i::after{
+	background: var(--color-green);
+}
+.works .works-field .col:last-child .row ul li input[type="checkbox"]:checked~.option i:before {
 	transform: translate(2px, 0) rotate(45deg);
 }
 
-.works .works-field .col:last-child .row ul li input[type="checkbox"]:checked~i:after {
+.works .works-field .col:last-child .row ul li input[type="checkbox"]:checked~.option i:after {
 	transform: translate(-2px, 0) rotate(-45deg);
 }
 
@@ -803,8 +811,14 @@ display: none;
 	}
 }
 
-.works .works-field .col:last-child .row .btn {
+.works .works-field .col .row .btn {
 	margin-top: 30px;
+	transition: all .5s linear;
+}
+
+.works .works-field .col .row .btn:hover{
+	background: var(--color-green);
+	color: var(--color-white);
 }
 
 /* ==========  WORKS END ========= */
@@ -1761,7 +1775,6 @@ display: none;
 	.faq-drawer__trigger:checked + .faq-drawer__title::after {
 		transform: rotate(-45deg);
 		transition: 0.25s ease-in-out;
-		/* color: var(--color-green); */
 	}
 	input[type="checkbox"] {
 	display: none;
