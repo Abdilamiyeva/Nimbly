@@ -611,8 +611,14 @@
 	}
 }
 
-.works .works-field .col:last-child .row .btn {
+.works .works-field .col .row .btn {
 	margin-top: 30px;
+	transition: all .5s linear;
+}
+
+.works .works-field .col .row .btn:hover{
+	background: var(--color-green);
+	color: var(--color-white);
 }
 
 /* ==========  WORKS END ========= */
@@ -1461,7 +1467,6 @@
 	.faq-drawer__trigger:checked + .faq-drawer__title::after {
 		transform: rotate(-45deg);
 		transition: 0.25s ease-in-out;
-		/* color: var(--color-green); */
 	}
 	input[type="checkbox"] {
 	display: none;
